@@ -185,8 +185,8 @@ public class NokiaModified {
 							break;
 							}
 					}
-				}// while true for phonebook method.
-	}// the phonebook method 
+				}// while true for phonebook 
+	}// the phonebook function
 
 	
 	public static void options(Scanner input) {
@@ -225,9 +225,9 @@ public class NokiaModified {
 						break;
 						}
 				}
-			} // while for the option method 
+			} // while for the option
 	
-	} // the options method in the phonebook method
+	} // the options function in the phonebook function
 
 
 	public static void message(Scanner input) {
@@ -314,9 +314,9 @@ public class NokiaModified {
 								break;
 								}		
 					}
-			}// while for the message method
+			}// while for the message function
 
-	}// the message method
+	}// the message function
 
 
 	public static void messageSettings(Scanner input) {
@@ -354,7 +354,7 @@ public class NokiaModified {
 										}
 							}
 						} // while for the messageSettings 
-	}// the messageSettings method in the message method
+	}// the messageSettings method in the message function
 
 
 	public static void set(Scanner input) {
@@ -399,8 +399,8 @@ public class NokiaModified {
 								break;
 								}
 					}
-				}// while for set method 
-	}// the set method in the messageSettings methood inside the message method   
+				}// while for set function
+	}// the set method in the messageSettings function inside the message function 
 
 	
 	public static void common(Scanner input) {
@@ -445,9 +445,9 @@ public class NokiaModified {
 									break;
 									}
 						}
-					} // while for the common in the messageSettings method inside the message method 
+					} // while for the common in the messageSettings function inside the message function 
 
-	}// common method in the messageSettings method inside the message method 
+	}// common method in the messageSettings function inside the message function
 	
 	
 	public static void callRegister(Scanner input) {
@@ -519,10 +519,10 @@ public class NokiaModified {
 								break;
 								}
 						}
-					}// while for the callRegister method
+					}// while for the callRegister function
 
 
-	}// callRegister method 
+	}// callRegister function
 
 
 	public static void callDuration(Scanner input) {
@@ -580,7 +580,7 @@ public class NokiaModified {
 										}
 						}
 					}// while for callCuration 
-	}// callDuration method in callregister method 
+	}// callDuration method in callregister function
 
 
 	public static void callCost(Scanner input) {
@@ -626,8 +626,8 @@ public class NokiaModified {
 							break;
 							}
 					}
-				}// while for the callCost method in the callRegister method 
-	}// callCost method in the callRegister Method 
+				}// while for the callCost method in the callRegister function
+	}// callCost function in the callRegister function
 
 		
 	public static void costSettings(Scanner input) {
@@ -665,8 +665,8 @@ public class NokiaModified {
 								break;
 								}
 						}
-					}// while loop for costSettings in the callRegister method 
-	}// costSettings method in the callResgister method
+					}// while loop for costSettings in the callRegister function
+	}// costSettings method in the callResgister function
 
 	
 	public static void tones(Scanner input) {
@@ -747,8 +747,8 @@ public class NokiaModified {
 							break;
 							}
 					}
-				}// while loop for tones method in the menu method 
-	}// tones method in the menu method 
+				}// while loop for tones function in the menu function
+	}// tones method in the menu function
 
 
 	public static void settings(Scanner input) {
@@ -796,9 +796,9 @@ public class NokiaModified {
 										break;
 										}
 							}
-					}// while loop for settings method in the menu method 
+					}// while loop for settings method in the menu function 
 
-	}// settings method in the menu method
+	}// settings method in the menu function
 
 
 	public static void callSettings(Scanner input) {
@@ -864,7 +864,7 @@ public class NokiaModified {
 						} 
 					}// while loop for callSettings 
 
-	} // callSettings method in settings method 
+	} // callSettings method in settings function 
 
 
 	public static void phoneSettings(Scanner input) {
@@ -929,8 +929,8 @@ public class NokiaModified {
 							}
 					}
 
-			}// while loop for phoneSettings in the settings method 
-	}// phoneSettings method in the settings method 
+			}// while loop for phoneSettings in the settings function
+	}// phoneSettings function in the settings function
 
 	public static void security(Scanner input) {
 		String security = """
@@ -992,8 +992,8 @@ public class NokiaModified {
 								break;
 								}
 						}
-				}//while loop in the security method in the settings method 
-	}// security method in settings method
+				}//while loop in the security function in the settings function
+	}// security function in settings function
 
 
 	public static void clock(Scanner input) {
@@ -1055,9 +1055,9 @@ public class NokiaModified {
 								break;
 								}
 						}
-				}// while loop in clock method in the menu method 
+				}// while loop in clock function in the menu function
 
-	}//clock method in the menu method
+	}//clock method in the menu function
 
 	public static void goback() {
 		Scanner input = new Scanner(System.in);
