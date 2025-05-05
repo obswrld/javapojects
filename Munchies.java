@@ -24,4 +24,24 @@ public class Munchies {
 			return sum;
 
 	}
+
+
+	public static String displayAge(int age) {
+		int years = age;
+		int months = age * 12;
+		int days = age * 365;
+		int minutes = age * 24 * 60;
+		int seconds = minutes * 60;
+
+		return String.format("Age: %d years, %d months, %d days, %d minutes, %d seconds", years, months, days, minutes, seconds);
+	}
+		
+	
+	public static String displayDogAge(String name, int humanYears) {
+		int dogYears = humanYears * 7;
+		System.out.printf("Dogs name:  %s,  Age in Dog years:   %d%n", name, dogYears);
+
+					return name, dogYears;
+	}
+
 }
