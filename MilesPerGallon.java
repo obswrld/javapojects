@@ -4,8 +4,7 @@ public class MilesPerGallon {
 		Scanner input = new Scanner(System.in);
 
 
-		int mpg = 0;
-		int totalMpg = 0;
+		double totalMpg = 0;
 		int tripCounter = 0;
 
 		System.out.println("Enter Miles covered or Enter -1 to Stop: ");
@@ -18,8 +17,8 @@ public class MilesPerGallon {
 			int gallon = input.nextInt();
 
 			if (gallon != 0){
-			mpg = miles / gallon;
-			System.out.println("the miles per gallon is:   %d" + mpg);
+			double mpg = miles / gallon;
+			System.out.printf("the miles per gallon is:   %2.f" , mpg);
 			totalMpg = totalMpg + mpg;
 			tripCounter = tripCounter + 1;
 			} else {
@@ -32,7 +31,7 @@ public class MilesPerGallon {
 
 			if (tripCounter > 0){
 				double average = (double) totalMpg / tripCounter;
-				System.out.printf("the average of number of gallons used and miles covered is: %.2f", average);
+				System.out.printf("the average of number of gallons used and miles covered is: %.2f%n",  average);
 			} else {
 				System.out.print("No info entered.");
 			}

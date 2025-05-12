@@ -41,7 +41,31 @@ public class Munchies {
 		int dogYears = humanYears * 7;
 		System.out.printf("Dogs name:  %s,  Age in Dog years:   %d%n", name, dogYears);
 
-					return name, dogYears;
+					return name; 
 	}
+
+
+	public static int primeNumbers() {
+		int count = 0;
+		int num = 2;
+		int number = 50;
+		int div = 0;
+		while(count < 50) {
+		for (int i = 1;  i <= number; i++) {
+			if (num % i == 0) {
+				div++;
+			}
+		}
+
+		if (div == 2) {
+			System.out.println(number + " ");
+			count++;
+		}
+		num++;
+		}
+
+		return 
+	}
+
 
 }

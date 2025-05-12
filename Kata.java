@@ -20,7 +20,7 @@ public class Kata{
 			return false;
 		}
 
-		for (int i = 2; i * i <= number; i++) {
+		for (int i = 2; i <= Math.sqrt(number); i++) {
 			if(number % i == 0) {
 				return false;
 			}
@@ -64,10 +64,7 @@ public class Kata{
 
 	// functions for division
 	public static float divide(int num1, int num2) {
-		if (num2 == 0) {
-			return Float.NaN;
-		}
-
+		
 			return (float) num1 / num2;
 	}
 
@@ -82,7 +79,7 @@ public class Kata{
 
 
 
-	// functions for palindrome 
+	// functions for int palindrome 
 	public static int palindrome(int number) {
 		
 		int remainder;
@@ -141,9 +138,92 @@ public class Kata{
 		}
 
 		long root = (long) Math.sqrt(number);
-		return root * root == number;
+		return root == Math.floor(root);
 
 		
 
+	}
+
+	
+	public static void primeNumbers(int number) {
+		int count = 0;
+		int num = 2;
+
+		while(count < 50) {
+			int div = 0;
+		for (int i = 1;  i <= number; i++) {
+			if (num % i == 0) {
+				div++;
+			}
+		}
+
+		if (div == 2) {
+			System.out.println(number + " ");
+			count++;
+		}
+		num++;
+		}
+	}
+
+
+
+	public static int CopiesDriller(int copySelection) {
+		int pricePerCopy = 0;
+
+		if (copySelection < 1){
+			System.out.println("Please Enter Amount of Copy Selected:   ");
+		} else {
+			if (copySelection >= 1 && copySelection <= 4) {
+				pricePerCopy = 2000;
+			}
+			if (copySelection >= 5 && copySelection <= 9) {
+				pricePerCopy = 1800;
+			}
+			if (copySelection >= 10 && copySelection <= 29) {
+				pricePerCopy = 1600;
+			}
+			if (copySelection >= 30 && copySelection <= 49) {
+				pricePerCopy = 1500;
+			}
+			if (copySelection >= 50 && copySelection <= 99) {
+				pricePerCopy = 1300;
+			}
+			if (copySelection >= 100 && copySelection <= 199) {
+				pricePerCopy = 1200;
+			}
+			if (copySelection >= 200 && copySelection <= 499) {
+				pricePerCopy = 1100;
+			} else {
+				pricePerCopy = 1000;
+			}
+		}
+
+		pricePerCopy = pricePerCopy * copySelection;
+
+		return pricePerCopy;
+	}
+
+
+	public static void MultiplicationTable(int number, int multiply) {
+
+		System.out.print(" ");
+		for (int i = number; i <= multiply; i++ ){
+			System.out.printf("%3d", i);
+		}
+		System.out.println( );
+
+		System.out.println("-----------------------------------------------------------\n");
+		System.out.println( );
+
+		for (int i = number; i <= multiply; i++) {
+			System.out.printf("%2d|", i);
+			for (int j = number; j <= multiply; j++){
+				System.out.printf("%3d", i * j);
+			}
+		System.out.println( );
+		}
+
+		
+		
 	}
 }
