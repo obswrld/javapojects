@@ -145,7 +145,7 @@ public class Kata{
 	}
 
 	
-	public static void primeNumbers(int number) {
+	/* public static int primeNumbers(int number) {
 		int count = 0;
 		int num = 2;
 
@@ -163,7 +163,8 @@ public class Kata{
 		}
 		num++;
 		}
-	}
+			return count;
+	}*/
 
 
 
