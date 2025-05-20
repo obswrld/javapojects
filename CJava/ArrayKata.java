@@ -83,7 +83,7 @@ public class ArrayKata {
 			}	
 	}
 
-	public static int subtractionOfMaxAndMin(int[] arrayOfIntegers) {
+	public static int[] subtractionOfMaxAndMin(int[] arrayOfIntegers) {
 			int max = arrayOfIntegers[0];
 			int min = arrayOfIntegers[0];
 
@@ -96,11 +96,14 @@ public class ArrayKata {
 				}
 			}
 
-			return max - min;
+			int[] result = {max - min};
+
+			return result;
 			
 				
 	}
 
+	
 
 
 
