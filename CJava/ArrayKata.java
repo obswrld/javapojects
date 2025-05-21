@@ -103,6 +103,38 @@ public class ArrayKata {
 				
 	}
 
+	public static int[] maxMin(int[] arrayOfIntegers) {
+		int max = arrayOfIntegers[0];
+		int min = arrayOfIntegers[0];
+
+		for(int num : arrayOfIntegers) {
+			if(num > max) {
+				max = num;
+			}
+			if(num < max) {
+				min = num;
+			}
+		}
+		int[] result = {max, min};
+		return result;
+	}
+
+
+	public static int[] sortNumbers(int[] numbers){
+		for (int i = 0; i < numbers.length - 1; i++){
+			for (int j = 0; j < numbers.length - 1 - i; j++){
+				if(numbers[j] > numbers[j + 1]){
+					int temp = numbers[j];
+					numbers[j] = numbers[j + 1];
+					numbers[j + 1] = temp;
+				}
+			}
+		}
+		
+			return numbers;
+	}
+
+
 	
 
 
