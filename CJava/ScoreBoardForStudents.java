@@ -1,4 +1,3 @@
-import java.util.Arrays;
 public class ScoreBoardForStudents{
 	public static void main(String[] args){
 		int [][] studentScores = {
@@ -7,15 +6,15 @@ public class ScoreBoardForStudents{
 		};
 
 		int [] totals = totalArrayOfScores(studentScores);
-		System.out.println("Total Scores:  " + Arrays.toString(totals));
+		System.out.println("Total Scores:  " + Array.toString(totals));
 
 		double [] averages = averageArrayOfScores(studentScores);
-		System.out.println("Average Score:  " + Arrays.toString(averages));
+		System.out.println("Average Score:  " + Array.toString(averages));
 
 	}
 
-	public static int[] totalArrayOfScores(int[][] arr){
-		int[] total = new int[arr.length];
+	public static int[] totalArrayOfScores(int[] arr){
+		int[] total = new[arr.length];
 		for(int i = 0; i < arr.length; i++){
 			total[i] = 0;
 			for(int j = 0; j < arr[i].length; j++){
@@ -25,13 +24,13 @@ public class ScoreBoardForStudents{
 		return total;
 	}
 
-	public static double[] averageArrayOfScores(int[][] arr){
-		double[] average = new double[arr.length];
+	public static double[] averageArrayOfScores(double[] arr){
+		double[] average = new[arr.length];
 
 		for (int i = 0; i < arr.length; i++){
-			int sum = 0;
+			double sum = 0;
 			 for (int j = 0; j < arr[i].length; j++) {
-                		sum += arr[i][j];
+                		sum += studentScores[i][j];
          		   }
 
 		average[i] = (double) sum / arr[i].length;
