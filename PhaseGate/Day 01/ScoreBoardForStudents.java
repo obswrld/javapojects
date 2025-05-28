@@ -6,11 +6,14 @@ public class ScoreBoardForStudents{
 			{9, 1, 3}
 		};
 
-		int [] totals = totalArrayOfScores(studentScores);
-		System.out.println("Total Scores:  " + Arrays.toString(totals));
+		int [] total = totalArrayOfScores(studentScores);
+		System.out.println("Total Scores:  " + Arrays.toString(total));
 
 		double [] averages = averageArrayOfScores(studentScores);
 		System.out.println("Average Score:  " + Arrays.toString(averages));
+
+		int [] position = checkPosition(total);
+		System.out.println("Position:  " + Arrays.toString(position));
 
 	}
 
@@ -39,40 +42,20 @@ public class ScoreBoardForStudents{
 		return average;
 	}
 
+	public static int[] checkPosition(int[] total){
+		int [] ranks = new int[total.length];
+		for (int i = 0; i < total.length; i++) {
+			int rank = 1;
+			for (int j = 0; j < total.length; j++){
+				if (total[j] > total[i]){
+					rank++;
+				}
+			}
+			ranks[i] = rank;
+		}
+		return ranks;
+	}
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
